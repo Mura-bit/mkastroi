@@ -1,4 +1,4 @@
-const geetGoods = () => {
+const getGoods = () => {
     const links = document.querySelectorAll('.navigation-link')
     const viewAll = document.querySelectorAll('.more')
     const viewMore = document.querySelector('.more')
@@ -16,12 +16,12 @@ const geetGoods = () => {
             goodBlock.data = good
             goodBlock.innerHTML = `
                 <div class="goods-card">
-                    <span class="label">${good.label ? null : 'd-none'}</span>
+                    <span class="label ${good.label ? null : 'd-none'}">${good.label}</span>
                     <img src="db/${good.img}" alt="${good.name}" class="goods-image">
                     <h3 class="goods-title">${good.name}</h3>
                     <p class="goods-description">${good.description}</p>
                     <button class="button goods-card-btn add-to-cart" data-id="${good.id}">
-                        <span class="button-price">$${good.price}</span>
+                        <span class="button-price">${good.price}KGS</span>
                     </button>
                 </div>
             `
@@ -30,7 +30,7 @@ const geetGoods = () => {
     }
 
     const getData = (value, category) => {
-        fetch('./db/db.json')
+        fetch('/db/db.json')
             .then((res) => res.json())
             .then((data) => {
                 const array = category ? data.filter((item) => item[category] === value) : data
@@ -79,4 +79,4 @@ const geetGoods = () => {
     }
                      
 }
-geetGoods()
+getGoods()

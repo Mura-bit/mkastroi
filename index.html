@@ -10,15 +10,18 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="theme-color" content="#ffffff">
+	<!-- <meta name="theme-color" content="#ffffff">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="css/swiper-bundle.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
 	<script src="js/caart.js" defer></script>
 	<script src="js/seearch.js" defer></script>
-	<script src="js/geetGoods.js" defer></script>
+	<!-- <script src="js/geetGoods.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script> -->
 </head>
 <!-- class="show-goods" -->
 <body id="body">
@@ -34,7 +37,7 @@
 					<nav>
 						<ul class="navigation d-flex justify-content-around">
 							<li class="navigation-item">
-								<a href="#" class="navigation-link" data-field="category">главная</a>
+								<a href="#" class="navigation-link">главная</a>
 							</li>
 							<li class="navigation-item">
 								<a href="#" class="navigation-link" data-field="category">каталог</a>
@@ -51,7 +54,11 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="col-lg-2 d-none d-lg-block">
+				<div class="col-6 col-lg-2">
+					<a href="tell:+420732968899" class="telphone">+420 732 96-88-99</a>
+					<button class="telbtn">заказать звонок</button>
+				</div>
+				<!-- <div class="col-lg-2 d-none d-lg-block">
 					<div class="form-control search-block">
 						<input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username"
 							aria-describedby="button-addon2">
@@ -59,17 +66,16 @@
 							<img src="img/search.png" alt="search">
 						</button>
 					</div>
-				</div>
-				<div class="col-lg-2 col-6 d-flex justify-content-end">
+				</div> -->
+				<!-- <div class="col-lg-2 col-6 d-flex justify-content-end">
 					<button class="button button-cart">
 						<img class="button-icon" src="img/cart.svg" alt="icon: cart">
 						<span class="button-text">Cart</span>
 						<span class="button-text cart-count"></span>
 					</button>
-				</div>
+				</div> -->
 			</div>
 		</div>
-		<!-- /.row --> 
 	</header>
 	<section class="slider swiper-container">
 		<div class="swiper-wrapper">
@@ -80,17 +86,14 @@
 							<h2 class="slide-title">ПЕНОБЛОКИ ОПТОМ</h2>
 							<p class="slide-description">НИЗКИЕ ЦЕНЫ</p>
 							<button class="button add-to-cart" data-id="003">
-								<span class="button-price">7500сом</span>
+								<span class="button-price">7500 KGS</span>
 								<span class="button-text">Купи сейчас</span>
 							</button>
 						</div>
-						<!-- /.col-4 offset-lg-1 -->
 					</div>
-					<!-- /.row -->
 				</div>
-				<!-- /.container -->
 			</section>
-			<section class="slide slide-2 swiper-slide">
+			<!-- <section class="slide slide-2 swiper-slide">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-4 col-10 offset-lg-1">
@@ -102,11 +105,8 @@
 								<span class="button-text">Купи сейчас</span>
 							</button>
 						</div>
-						<!-- /.col-4 offset-lg-1 -->
 					</div>
-					<!-- /.row -->
 				</div>
-				<!-- /.container -->
 			</section>
 			<section class="slide slide-3 swiper-slide">
 				<div class="container">
@@ -120,11 +120,8 @@
 								<span class="button-text">Купи сейчас</span>
 							</button>
 						</div>
-						<!-- /.col-4 offset-lg-1 -->
 					</div>
-					<!-- /.row -->
 				</div>
-				<!-- /.container -->
 			</section>
 			<section class="slide slide-4 swiper-slide">
 				<div class="container">
@@ -137,16 +134,14 @@
 								<span class="button-price">$319</span>
 								<span class="button-text">Купи сейчас</span>
 							</button>
-						</div>
+						</div> -->
 						<!-- /.col-4 offset-lg-1 -->
-					</div>
-					<!-- /.row -->
+					<!-- </div>
 				</div>
-				<!-- /.container -->
-			</section>
+			</section> -->
 		</div>
 		<!-- /.swiper-wrapper -->
-		<div class="slider-nav">
+		<!-- <div class="slider-nav">
 			<div class="container">
 				<div class="row justify-content-between">
 					<div class="col-1">
@@ -154,68 +149,83 @@
 							<img src="img/arrow-prev.svg" alt="icon: arrow-prev">
 						</button>
 					</div>
-					<!-- /.col-1 -->
 					<div class="col-1">
 						<button class="slider-button slider-button-next">
-							<img src="img/arrow-next.svg" alt="icon: arrow-prev">
+							<img src="img/arrow-next.svg" alt="icon: arrow-next">
 						</button>
 					</div>
-					<!-- /.col-1 -->
 				</div>
-				<!-- /.row -->
 			</div>
-			<!-- /.container -->
-		</div>
-		<!-- /.slider-nav -->
+		</div> -->
 	</section>
+
+	<!-- <section>
+		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
+			  <div class="carousel-item active">
+				<img src="img/st.card1.jpg" class="d-block w-100" alt="#">
+			  </div>
+			  <div class="carousel-item">
+				<img src="img/st.card2.jpg" class="d-block w-100" alt="#">
+			  </div>
+			  <div class="carousel-item">
+				<img src="img/st.card3.jpg" class="d-block w-100" alt="#">
+			  </div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</section> -->
+
 	<!-- /.slider -->
 	<section class="special-offers container pt-5 pb-4">
 		<div class="row mb-4">
 			<div class="col-xl-6">
 				<div class="card card-1 mb-4">
-					<h3 class="card-title">Fashion Month Ready in Capital Shop</h3>
-					<p class="card-text">Bags & Acsessories & Lingerie & Sportswear & Beauty & Swimwear</p>
-					<button class="button">
+					<h3 class="card-title">Стройматериалы</h3>
+					<!-- <button class="button">
 						<span class="button-text">View all</span>
 						<img src="img/arrow.svg" alt="icon: arrow" class="button-icon">
-					</button>
+					</button> -->
 				</div>
 				<!-- /.card -->
 			</div>
 			<!-- /.col-6 -->
 			<div class="col-xl-6">
 				<div class="card card-2 mb-4">
-					<h3 class="card-title">Catch the Sun: Spring Break Styles From $5.99</h3>
-					<p class="card-text">Sweaters & Hoodies & Puffer Jackets & Coats and Jackets & Knit</p>
-					<button class="button">
+					<h3 class="card-title">Инструменты</h3>
+					<!-- <button class="button">
 						<span class="button-text">View all</span>
 						<img src="img/arrow.svg" alt="icon: arrow" class="button-icon">
-					</button>
+					</button> -->
 				</div>
 				<!-- /.card -->
 			</div>
 			<!-- /.col-6 -->
 			<div class="col-xl-9 col-lg-6 mb-4">
 				<div class="card card-3">
-					<span class="label">Bestseller</span>
-					<h3 class="card-title large">Poplin Top <br>With Sleeve Bow</h3>
-					<p class="card-text large">Poplin top with roll neckline, long sleeves</p>
-					<button class="button add-to-cart" data-id="002">
+					<h3 class="card-title large">Лаки и краски</h3>
+					<!-- <button class="button add-to-cart" data-id="002">
 						<span class="button-price">$129</span>
 						<span class="button-text">Shop now</span>
-					</button>
+					</button> -->
 				</div>
 				<!-- /.card -->
 			</div>
 			<!-- /.col-9 -->
 			<div class="col-xl-3 col-lg-6">
 				<div class="card card-4">
-					<h3 class="card-title text-light mw-160">Printed Shirt with a Bow</h3>
-					<p class="card-text text-light">Pink/Sky Blue/Yellow</p>
-					<button class="button add-to-cart button-four" data-id="009">
+					<h3 class="card-title text-light mw-160">Еще больше товаров...</h3>
+					<!-- <button class="button add-to-cart button-four" data-id="009">
 						<span class="button-price">$119</span>
 						<span class="button-text">Shop now</span>
-					</button>
+					</button> -->
 				</div>
 				<!-- /.card -->
 			</div>
@@ -228,7 +238,7 @@
 			</div>
 			<!-- /.col-9 -->
 			<div class="col-3 d-flex justify-content-end">
-				<a href="#" class="more">View All</a>
+				<a href="#" class="more">Смотреть Все</a>
 			</div>
 			<!-- /.col-3 -->
 		</div>
@@ -236,14 +246,14 @@
 		<div class="short-goods row">
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/such knauf/1.jpg" alt="image: Hoodie" class="goods-image">
-					<h3 class="goods-title">Embroidered Hoodie</h3>
+					<img src="img/such/such knauf/1.jpg" alt="image: Штукатурка гипсовая Knauf Ротбанд, 30 кг" class="goods-image">
+					<h3 class="goods-title">Штукатурка гипсовая Knauf Ротбанд, 30 кг</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
+					<!-- <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p> -->
 					<!-- /.goods-description -->
 					<!-- /.goods-price -->
 					<button class="button goods-card-btn add-to-cart" data-id="012">
-						<span class="button-price">$89</span>
+						<span class="button-price">395 KGS</span>
 					</button>
 				</div>
 				<!-- /.goods-card -->
@@ -251,13 +261,13 @@
 			<!-- /.col-3 -->
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/such knauf/2.jpeg" alt="image: Faded Beach Trousers" class="goods-image">
-					<h3 class="goods-title">Faded Beach Trousers</h3>
+					<img src="img/such/such knauf/2.jpeg" alt="image: Штукатурка фасадная Knauf Unterputz 25 кг" class="goods-image">
+					<h3 class="goods-title">Штукатурка фасадная Knauf Unterputz 25 кг</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Navy/Ochre/Black/Khaki</p>
+					<!-- <p class="goods-description">Navy/Ochre/Black/Khaki</p> -->
 					<!-- /.goods-description -->
 					<button class="button goods-card-btn add-to-cart" data-id="011">
-						<span class="button-price">$139</span>
+						<span class="button-price">260 KGS</span>
 					</button>
 					<!-- /.goods-price -->
 				</div>
@@ -266,13 +276,13 @@
 			<!-- /.col-3 -->
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/such knauf/3.jpeg" alt="image: Text T-Shirt" class="goods-image">
-					<h3 class="goods-title">Text T-Shirt</h3>
+					<img src="img/such/such knauf/3.jpeg" alt="image: Шпаклёвка гипсовая Knauf Фуген, 25 кг" class="goods-image">
+					<h3 class="goods-title">Шпаклёвка гипсовая Knauf Фуген, 25 кг</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">White</p>
+					<!-- <p class="goods-description">White</p> -->
 					<!-- /.goods-description -->
 					<button class="button goods-card-btn add-to-cart" data-id="010">
-						<span class="button-price">$59</span>
+						<span class="button-price">470 KGS</span>
 					</button>
 					<!-- /.goods-price -->
 				</div>
@@ -281,13 +291,13 @@
 			<!-- /.col-3 -->
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/such knauf/4.jpeg" alt="image: Striped Long Sleeve Shirt" class="goods-image">
-					<h3 class="goods-title">Striped Long Sleeve Shirt</h3>
+					<img src="img/such/such knauf/4.jpeg" alt="image: Клей для плитки Knauf Флизен, 25 кг" class="goods-image">
+					<h3 class="goods-title">Клей для плитки Knauf Флизен, 25 кг</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Red/Sky Blue</p>
+					<!-- <p class="goods-description">Red/Sky Blue</p> -->
 					<!-- /.goods-description -->
 					<button class="button goods-card-btn add-to-cart" data-id="001">
-						<span class="button-price">$119</span>
+						<span class="button-price">275 KGS</span>
 					</button>
 					<!-- /.goods-price -->
 				</div>
@@ -301,7 +311,7 @@
 			</div>
 			<!-- /.col-9 -->
 			<div class="col-3 d-flex justify-content-end">
-				<a href="#" class="more">View All</a>
+				<a href="#" class="more">Смотреть Все</a>
 			</div>
 			<!-- /.col-3 -->
 		</div>
@@ -309,14 +319,14 @@
 		<div class="short-goods row">
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/shtuk/1.jpg" alt="image: Hoodie" class="goods-image">
-					<h3 class="goods-title">Embroidered Hoodie</h3>
+					<img src="img/such/shtuk/1.jpg" alt="image: Штукатурка цементная Основит Pro 25 кг" class="goods-image">
+					<h3 class="goods-title">Штукатурка цементная Основит Pro 25 кг</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
+					<!-- <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p> -->
 					<!-- /.goods-description -->
 					<!-- /.goods-price -->
 					<button class="button goods-card-btn add-to-cart" data-id="012">
-						<span class="button-price">$89</span>
+						<span class="button-price">230 KGS</span>
 					</button>
 				</div>
 				<!-- /.goods-card -->
@@ -325,12 +335,12 @@
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
 					<img src="img/such/shtuk/2.jpeg" alt="image: Faded Beach Trousers" class="goods-image">
-					<h3 class="goods-title">Faded Beach Trousers</h3>
+					<h3 class="goods-title">Штукатурка гипсовая белая Русеан Термопласт 30 кг</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Navy/Ochre/Black/Khaki</p>
+					<!-- <p class="goods-description">Navy/Ochre/Black/Khaki</p> -->
 					<!-- /.goods-description -->
 					<button class="button goods-card-btn add-to-cart" data-id="011">
-						<span class="button-price">$139</span>
+						<span class="button-price">250 KGS</span>
 					</button>
 					<!-- /.goods-price -->
 				</div>
@@ -339,13 +349,13 @@
 			<!-- /.col-3 -->
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/shtuk/3.jpeg" alt="image: Text T-Shirt" class="goods-image">
-					<h3 class="goods-title">Text T-Shirt</h3>
+					<img src="img/such/shtuk/3.jpeg" alt="image: Штукатурка гипсовая Русеан Пластер 30 кг" class="goods-image">
+					<h3 class="goods-title">Штукатурка гипсовая Русеан Пластер 30 кг</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">White</p>
+					<!-- <p class="goods-description">White</p> -->
 					<!-- /.goods-description -->
 					<button class="button goods-card-btn add-to-cart" data-id="010">
-						<span class="button-price">$59</span>
+						<span class="button-price">260 KGS</span>
 					</button>
 					<!-- /.goods-price -->
 				</div>
@@ -354,13 +364,13 @@
 			<!-- /.col-3 -->
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/shtuk/4.jpeg" alt="image: Striped Long Sleeve Shirt" class="goods-image">
-					<h3 class="goods-title">Striped Long Sleeve Shirt</h3>
+					<img src="img/such/shtuk/4.jpeg" alt="image: Штукатурка гипсовая Старатели, 30 кг" class="goods-image">
+					<h3 class="goods-title">Штукатурка гипсовая Старатели, 30 кг</h3>
 					<!-- /.goods-title -->
 					<p class="goods-description">Red/Sky Blue</p>
 					<!-- /.goods-description -->
 					<button class="button goods-card-btn add-to-cart" data-id="001">
-						<span class="button-price">$119</span>
+						<span class="button-price">280 KGS</span>
 					</button>
 					<!-- /.goods-price -->
 				</div>
@@ -368,56 +378,56 @@
 			</div>
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/shtuk/5.jpg" alt="image: Hoodie" class="goods-image">
-					<h3 class="goods-title">Embroidered Hoodie</h3>
+					<img src="img/such/shtuk/5.jpg" alt="image: Штукатурка гипсовая Основит Pro 30 кг" class="goods-image">
+					<h3 class="goods-title">Штукатурка гипсовая Основит Pro 30 кг</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
+					<!-- <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p> -->
 					<!-- /.goods-description -->
 					<!-- /.goods-price -->
 					<button class="button goods-card-btn add-to-cart" data-id="012">
-						<span class="button-price">$89</span>
+						<span class="button-price">330 KGS</span>
 					</button>
 				</div>
 				<!-- /.goods-card -->
 			</div>
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/shtuk/6.jpeg" alt="image: Hoodie" class="goods-image">
-					<h3 class="goods-title">Embroidered Hoodie</h3>
+					<img src="img/such/shtuk/6.jpeg" alt="image: Штукатурка гипсовая ВОЛМА Гипс-Актив 30 кг" class="goods-image">
+					<h3 class="goods-title">Штукатурка гипсовая ВОЛМА Гипс-Актив 30 кг</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
+					<!-- <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p> -->
 					<!-- /.goods-description -->
 					<!-- /.goods-price -->
 					<button class="button goods-card-btn add-to-cart" data-id="012">
-						<span class="button-price">$89</span>
+						<span class="button-price">285 KGS</span>
 					</button>
 				</div>
 				<!-- /.goods-card -->
 			</div>
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/shtuk/7.jpeg" alt="image: Hoodie" class="goods-image">
-					<h3 class="goods-title">Embroidered Hoodie</h3>
+					<img src="img/such/shtuk/7.jpeg" alt="image: Штукатурка гипсовая ВОЛМА, Холст 30 кг" class="goods-image">
+					<h3 class="goods-title">Штукатурка гипсовая ВОЛМА, Холст 30 кг</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
+					<!-- <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p> -->
 					<!-- /.goods-description -->
 					<!-- /.goods-price -->
 					<button class="button goods-card-btn add-to-cart" data-id="012">
-						<span class="button-price">$89</span>
+						<span class="button-price">290 KGS</span>
 					</button>
 				</div>
 				<!-- /.goods-card -->
 			</div>
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/shtuk/8.jpeg" alt="image: Hoodie" class="goods-image">
-					<h3 class="goods-title">Embroidered Hoodie</h3>
+					<img src="img/such/shtuk/8.jpeg" alt="image: Штукатурка гипсовая Unis Теплон, 30 кг" class="goods-image">
+					<h3 class="goods-title">Штукатурка гипсовая Unis Теплон, 30 кг</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
+					<!-- <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p> -->
 					<!-- /.goods-description -->
 					<!-- /.goods-price -->
 					<button class="button goods-card-btn add-to-cart" data-id="012">
-						<span class="button-price">$89</span>
+						<span class="button-price">315 KGS</span>
 					</button>
 				</div>
 				<!-- /.goods-card -->
@@ -431,7 +441,7 @@
 			</div>
 			<!-- /.col-9 -->
 			<div class="col-3 d-flex justify-content-end">
-				<a href="#" class="more">View All</a>
+				<a href="#" class="more">Смотреть Все</a>
 			</div>
 			<!-- /.col-3 -->
 		</div>
@@ -439,14 +449,14 @@
 		<div class="short-goods row">
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/gips knauf/1.jpeg" alt="image: Hoodie" class="goods-image">
-					<h3 class="goods-title">Embroidered Hoodie</h3>
+					<img src="img/such/gips knauf/1.jpeg" alt="image: Гипсокартон ГКЛ Knauf ГСП-А 2500×1200х12.5 мм" class="goods-image">
+					<h3 class="goods-title">Гипсокартон ГКЛ Knauf ГСП-А 2500×1200х12.5 мм</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
+					<!-- <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p> -->
 					<!-- /.goods-description -->
 					<!-- /.goods-price -->
 					<button class="button goods-card-btn add-to-cart" data-id="012">
-						<span class="button-price">$89</span>
+						<span class="button-price">280 KGS</span>
 					</button>
 				</div>
 				<!-- /.goods-card -->
@@ -454,13 +464,13 @@
 			<!-- /.col-3 -->
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/gips knauf/2.jpeg" alt="image: Faded Beach Trousers" class="goods-image">
-					<h3 class="goods-title">Faded Beach Trousers</h3>
+					<img src="img/such/gips knauf/2.jpeg" alt="image: Гипсокартон ГКЛ Knauf ГСП-А 2500x1200x9.5 мм" class="goods-image">
+					<h3 class="goods-title">Гипсокартон ГКЛ Knauf ГСП-А 2500x1200x9.5 мм</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Navy/Ochre/Black/Khaki</p>
+					<!-- <p class="goods-description">Navy/Ochre/Black/Khaki</p> -->
 					<!-- /.goods-description -->
 					<button class="button goods-card-btn add-to-cart" data-id="011">
-						<span class="button-price">$139</span>
+						<span class="button-price">270 KGS</span>
 					</button>
 					<!-- /.goods-price -->
 				</div>
@@ -469,13 +479,13 @@
 			<!-- /.col-3 -->
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/gips knauf/3.jpeg" alt="image: Text T-Shirt" class="goods-image">
-					<h3 class="goods-title">Text T-Shirt</h3>
+					<img src="img/such/gips knauf/3.jpeg" alt="image: Гипсокартон ГКЛВ влагостойкий Knauf ГСП-Н2 2500×1200х12.5 мм" class="goods-image">
+					<h3 class="goods-title">Гипсокартон ГКЛВ влагостойкий Knauf ГСП-Н2 2500×1200х12.5 мм</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">White</p>
+					<!-- <p class="goods-description">White</p> -->
 					<!-- /.goods-description -->
 					<button class="button goods-card-btn add-to-cart" data-id="010">
-						<span class="button-price">$59</span>
+						<span class="button-price">395 KGS</span>
 					</button>
 					<!-- /.goods-price -->
 				</div>
@@ -484,13 +494,13 @@
 			<!-- /.col-3 -->
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/gips knauf/4.jpeg" alt="image: Striped Long Sleeve Shirt"class="goods-image">
-					<h3 class="goods-title">Striped Long Sleeve Shirt</h3>
+					<img src="img/such/gips knauf/4.jpeg" alt="image: Гипсокартон ГКЛВ влагостойкий Knauf ГСП-Н2 2500×1200х9.5 мм"class="goods-image">
+					<h3 class="goods-title">Гипсокартон ГКЛВ влагостойкий Knauf ГСП-Н2 2500×1200х9.5 мм</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Red/Sky Blue</p>
+					<!-- <p class="goods-description">Red/Sky Blue</p> -->
 					<!-- /.goods-description -->
 					<button class="button goods-card-btn add-to-cart" data-id="001">
-						<span class="button-price">$119</span>
+						<span class="button-price">390 KGS</span>
 					</button>
 					<!-- /.goods-price -->
 				</div>
@@ -504,7 +514,7 @@
 			</div>
 			<!-- /.col-9 -->
 			<div class="col-3 d-flex justify-content-end">
-				<a href="#" class="more">View All</a>
+				<a href="#" class="more">Смотреть Все</a>
 			</div>
 			<!-- /.col-3 -->
 		</div>
@@ -512,14 +522,14 @@
 		<div class="short-goods row">
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/profi knauf/1.jpg" alt="image: Hoodie" class="goods-image">
-					<h3 class="goods-title">Embroidered Hoodie</h3>
+					<img src="img/such/profi knauf/1.jpg" alt="image: Профиль направляющий Knauf ПН 75x40x3000 мм" class="goods-image">
+					<h3 class="goods-title">Профиль направляющий Knauf ПН 75x40x3000 мм</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
+					<!-- <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p> -->
 					<!-- /.goods-description -->
 					<!-- /.goods-price -->
 					<button class="button goods-card-btn add-to-cart" data-id="012">
-						<span class="button-price">$89</span>
+						<span class="button-price">360 KGS</span>
 					</button>
 				</div>
 				<!-- /.goods-card -->
@@ -527,13 +537,13 @@
 			<!-- /.col-3 -->
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/profi knauf/2.jpg" alt="image: Faded Beach Trousers" class="goods-image">
-					<h3 class="goods-title">Faded Beach Trousers</h3>
+					<img src="img/such/profi knauf/2.jpg" alt="image: Профиль стоечный Knauf ПС 75x50x3000 мм" class="goods-image">
+					<h3 class="goods-title">Профиль стоечный Knauf ПС 75x50x3000 мм</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Navy/Ochre/Black/Khaki</p>
+					<!-- <p class="goods-description">Navy/Ochre/Black/Khaki</p> -->
 					<!-- /.goods-description -->
 					<button class="button goods-card-btn add-to-cart" data-id="011">
-						<span class="button-price">$139</span>
+						<span class="button-price">390 KGS</span>
 					</button>
 					<!-- /.goods-price -->
 				</div>
@@ -542,13 +552,13 @@
 			<!-- /.col-3 -->
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/profi knauf/3.jpg" alt="image: Text T-Shirt" class="goods-image">
-					<h3 class="goods-title">Text T-Shirt</h3>
+					<img src="img/such/profi knauf/3.jpg" alt="image: Профиль стоечный Knauf ПС 100x50x3000 мм" class="goods-image">
+					<h3 class="goods-title">Профиль стоечный Knauf ПС 100x50x3000 мм</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">White</p>
+					<!-- <p class="goods-description">White</p> -->
 					<!-- /.goods-description -->
 					<button class="button goods-card-btn add-to-cart" data-id="010">
-						<span class="button-price">$59</span>
+						<span class="button-price">480 KGS</span>
 					</button>
 					<!-- /.goods-price -->
 				</div>
@@ -557,14 +567,13 @@
 			<!-- /.col-3 -->
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/profi knauf/4.jpg" alt="image: Striped Long Sleeve Shirt"
-						class="goods-image">
-					<h3 class="goods-title">Striped Long Sleeve Shirt</h3>
+					<img src="img/such/profi knauf/4.jpg" alt="image: Профиль направляющий Knauf ПН 100x40x3000 мм" class="goods-image">
+					<h3 class="goods-title">Профиль направляющий Knauf ПН 100x40x3000 мм</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Red/Sky Blue</p>
+					<!-- <p class="goods-description">Red/Sky Blue</p> -->
 					<!-- /.goods-description -->
 					<button class="button goods-card-btn add-to-cart" data-id="001">
-						<span class="button-price">$119</span>
+						<span class="button-price">450 KGS</span>
 					</button>
 					<!-- /.goods-price -->
 				</div>
@@ -572,56 +581,56 @@
 			</div>
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/profi knauf/5.jpg" alt="image: Hoodie" class="goods-image">
-					<h3 class="goods-title">Embroidered Hoodie</h3>
+					<img src="img/such/profi knauf/5.jpg" alt="image: Профиль потолочный направляющий Knauf ППН 28x27x3000мм" class="goods-image">
+					<h3 class="goods-title">Профиль потолочный направляющий Knauf ППН 28x27x3000мм</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
+					<!-- <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p> -->
 					<!-- /.goods-description -->
 					<!-- /.goods-price -->
 					<button class="button goods-card-btn add-to-cart" data-id="012">
-						<span class="button-price">$89</span>
+						<span class="button-price">195 KGS</span>
 					</button>
 				</div>
 				<!-- /.goods-card -->
 			</div>
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/profi knauf/6.jpg" alt="image: Hoodie" class="goods-image">
-					<h3 class="goods-title">Embroidered Hoodie</h3>
+					<img src="img/such/profi knauf/6.jpg" alt="image: Профиль потолочный Knauf ПП 60x27x3000 мм" class="goods-image">
+					<h3 class="goods-title">Профиль потолочный Knauf ПП 60x27x3000 мм</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
+					<!-- <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p> -->
 					<!-- /.goods-description -->
 					<!-- /.goods-price -->
 					<button class="button goods-card-btn add-to-cart" data-id="012">
-						<span class="button-price">$89</span>
+						<span class="button-price">260 KGS</span>
 					</button>
 				</div>
 				<!-- /.goods-card -->
 			</div>
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/profi knauf/7.jpg" alt="image: Hoodie" class="goods-image">
-					<h3 class="goods-title">Embroidered Hoodie</h3>
+					<img src="img/such/profi knauf/7.jpg" alt="image: Профиль стоечный Knauf ПС 50x50x3000 мм" class="goods-image">
+					<h3 class="goods-title">Профиль стоечный Knauf ПС 50x50x3000 мм</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
+					<!-- <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p> -->
 					<!-- /.goods-description -->
 					<!-- /.goods-price -->
 					<button class="button goods-card-btn add-to-cart" data-id="012">
-						<span class="button-price">$89</span>
+						<span class="button-price">330 KGS</span>
 					</button>
 				</div>
 				<!-- /.goods-card -->
 			</div>
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/profi knauf/8.jpg" alt="image: Hoodie" class="goods-image">
-					<h3 class="goods-title">Embroidered Hoodie</h3>
+					<img src="img/such/profi knauf/8.jpg" alt="image: Профиль Knauf ПС Стоечный 50×40 мм 3 м" class="goods-image">
+					<h3 class="goods-title">Профиль Knauf ПС Стоечный 50×40 мм 3 м</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
+					<!-- <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p> -->
 					<!-- /.goods-description -->
 					<!-- /.goods-price -->
 					<button class="button goods-card-btn add-to-cart" data-id="012">
-						<span class="button-price">$89</span>
+						<span class="button-price">300 KGS</span>
 					</button>
 				</div>
 				<!-- /.goods-card -->
@@ -634,7 +643,7 @@
 			</div>
 			<!-- /.col-9 -->
 			<div class="col-3 d-flex justify-content-end">
-				<a href="#" class="more">View All</a>
+				<a href="#" class="more">Смотреть Все</a>
 			</div>
 			<!-- /.col-3 -->
 		</div>
@@ -642,14 +651,14 @@
 		<div class="short-goods row">
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/pe.cement/1.jpeg" alt="image: Hoodie" class="goods-image">
-					<h3 class="goods-title">Embroidered Hoodie</h3>
+					<img src="img/such/pe.cement/1.jpeg" alt="image: Пескобетон М-300 МКУ 40кг, Крупнофракционный" class="goods-image">
+					<h3 class="goods-title">Пескобетон М-300 МКУ 40кг, Крупнофракционный</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
+					<!-- <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p> -->
 					<!-- /.goods-description -->
 					<!-- /.goods-price -->
 					<button class="button goods-card-btn add-to-cart" data-id="012">
-						<span class="button-price">$89</span>
+						<span class="button-price">140 KGS</span>
 					</button>
 				</div>
 				<!-- /.goods-card -->
@@ -657,13 +666,13 @@
 			<!-- /.col-3 -->
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/pe.cement/2.jpeg" alt="image: Faded Beach Trousers" class="goods-image">
-					<h3 class="goods-title">Faded Beach Trousers</h3>
+					<img src="img/such/pe.cement/2.jpeg" alt="image: Пескобетон М-300 40 кг, АНКЕР" class="goods-image">
+					<h3 class="goods-title">Пескобетон М-300 40 кг, АНКЕР</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Navy/Ochre/Black/Khaki</p>
+					<!-- <p class="goods-description">Navy/Ochre/Black/Khaki</p> -->
 					<!-- /.goods-description -->
 					<button class="button goods-card-btn add-to-cart" data-id="011">
-						<span class="button-price">$139</span>
+						<span class="button-price">130 KGS</span>
 					</button>
 					<!-- /.goods-price -->
 				</div>
@@ -672,13 +681,13 @@
 			<!-- /.col-3 -->
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/pe.cement/3.jpeg" alt="image: Text T-Shirt" class="goods-image">
-					<h3 class="goods-title">Text T-Shirt</h3>
+					<img src="img/such/pe.cement/3.jpeg" alt="image: Пескобетон М-300 40 кг, РУСЕАН" class="goods-image">
+					<h3 class="goods-title">Пескобетон М-300 40 кг, РУСЕАН</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">White</p>
+					<!-- <p class="goods-description">White</p> -->
 					<!-- /.goods-description -->
 					<button class="button goods-card-btn add-to-cart" data-id="010">
-						<span class="button-price">$59</span>
+						<span class="button-price">220 KGS</span>
 					</button>
 					<!-- /.goods-price -->
 				</div>
@@ -687,66 +696,66 @@
 			<!-- /.col-3 -->
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/pe.cement/4.jpeg" alt="image: Striped Long Sleeve Shirt" class="goods-image">
-					<h3 class="goods-title">Striped Long Sleeve Shirt</h3>
+					<img src="img/such/pe.cement/4.jpeg" alt="image: Пескобетон LUIX М-300 40 кг, РУСЕАН" class="goods-image">
+					<h3 class="goods-title">Пескобетон LUIX М-300 40 кг, РУСЕАН</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Red/Sky Blue</p>
+					<!-- <p class="goods-description">Red/Sky Blue</p> -->
 					<!-- /.goods-description -->
 					<button class="button goods-card-btn add-to-cart" data-id="001">
-						<span class="button-price">$119</span>
+						<span class="button-price">175 KGS</span>
 					</button>
 					<!-- /.goods-price -->
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/pe.cement/5.jpeg" alt="image: Hoodie" class="goods-image">
-					<h3 class="goods-title">Embroidered Hoodie</h3>
+					<img src="img/such/pe.cement/5.jpeg" alt="image: Штукатурная смесь Русеан 40 кг" class="goods-image">
+					<h3 class="goods-title">Штукатурная смесь Русеан 40 кг</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
+					<!-- <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p> -->
 					<!-- /.goods-description -->
 					<!-- /.goods-price -->
 					<button class="button goods-card-btn add-to-cart" data-id="012">
-						<span class="button-price">$89</span>
+						<span class="button-price">230 KGS</span>
 					</button>
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/pe.cement/6.jpeg" alt="image: Hoodie" class="goods-image">
-					<h3 class="goods-title">Embroidered Hoodie</h3>
+					<img src="img/such/pe.cement/6.jpeg" alt="image: Сухая смесь М-150 универсальная 40кг, АНКЕР" class="goods-image">
+					<h3 class="goods-title">Сухая смесь М-150 универсальная 40кг, АНКЕР</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
+					<!-- <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p> -->
 					<!-- /.goods-description -->
 					<!-- /.goods-price -->
 					<button class="button goods-card-btn add-to-cart" data-id="012">
-						<span class="button-price">$89</span>
+						<span class="button-price">130 KGS</span>
 					</button>
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/pe.cement/7.jpeg" alt="image: Hoodie" class="goods-image">
-					<h3 class="goods-title">Embroidered Hoodie</h3>
+					<img src="img/such/pe.cement/7.jpeg" alt="image: Цемент ПЦ-500 Экстра 50 кг, ЕВРОЦЕМЕНТ" class="goods-image">
+					<h3 class="goods-title">Цемент ПЦ-500 Экстра 50 кг, ЕВРОЦЕМЕНТ</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
+					<!-- <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p> -->
 					<!-- /.goods-description -->
 					<!-- /.goods-price -->
 					<button class="button goods-card-btn add-to-cart" data-id="012">
-						<span class="button-price">$89</span>
+						<span class="button-price">380 KGS</span>
 					</button>
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/pe.cement/8.jpeg" alt="image: Hoodie" class="goods-image">
-					<h3 class="goods-title">Embroidered Hoodie</h3>
+					<img src="img/such/pe.cement/8.jpeg" alt="image: Цемент ПЦ-500 Д20, 50 кг" class="goods-image">
+					<h3 class="goods-title">Цемент ПЦ-500 Д20, 50 кг</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
+					<!-- <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p> -->
 					<!-- /.goods-description -->
 					<!-- /.goods-price -->
 					<button class="button goods-card-btn add-to-cart" data-id="012">
-						<span class="button-price">$89</span>
+						<span class="button-price">430 KGS</span>
 					</button>
 				</div>
 				<!-- /.goods-card -->
@@ -759,7 +768,7 @@
 			</div>
 			<!-- /.col-9 -->
 			<div class="col-3 d-flex justify-content-end">
-				<a href="#" class="more">View All</a>
+				<a href="#" class="more">Смотреть Все</a>
 			</div>
 			<!-- /.col-3 -->
 		</div>
@@ -767,14 +776,14 @@
 		<div class="short-goods row">
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/armatur/1.jpeg" alt="image: Hoodie" class="goods-image">
-					<h3 class="goods-title">Embroidered Hoodie</h3>
+					<img src="img/such/armatur/1.jpeg" alt="image: Арматура рифленая 16 мм" class="goods-image">
+					<h3 class="goods-title">Арматура рифленая 16 мм</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
+					<!-- <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p> -->
 					<!-- /.goods-description -->
 					<!-- /.goods-price -->
 					<button class="button goods-card-btn add-to-cart" data-id="012">
-						<span class="button-price">$89</span>
+						<span class="button-price">119 KGS</span>
 					</button>
 				</div>
 				<!-- /.goods-card -->
@@ -782,13 +791,13 @@
 			<!-- /.col-3 -->
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/armatur/2.jpeg" alt="image: Faded Beach Trousers" class="goods-image">
-					<h3 class="goods-title">Faded Beach Trousers</h3>
+					<img src="img/such/armatur/2.jpeg" alt="image: Арматура гладкая 8 мм" class="goods-image">
+					<h3 class="goods-title">Арматура гладкая 8 мм</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Navy/Ochre/Black/Khaki</p>
+					<!-- <p class="goods-description">Navy/Ochre/Black/Khaki</p> -->
 					<!-- /.goods-description -->
 					<button class="button goods-card-btn add-to-cart" data-id="011">
-						<span class="button-price">$139</span>
+						<span class="button-price">129 KGS</span>
 					</button>
 					<!-- /.goods-price -->
 				</div>
@@ -797,13 +806,13 @@
 			<!-- /.col-3 -->
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/armatur/3.jpeg" alt="image: Text T-Shirt" class="goods-image">
-					<h3 class="goods-title">Text T-Shirt</h3>
+					<img src="img/such/armatur/3.jpeg" alt="image: Text Арматура металлическая 12 мм, А400/500С, 2.92 м" class="goods-image">
+					<h3 class="goods-title">Арматура металлическая 12 мм, А400/500С, 2.92 м</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">White</p>
+					<!-- <p class="goods-description">White</p> -->
 					<!-- /.goods-description -->
 					<button class="button goods-card-btn add-to-cart" data-id="010">
-						<span class="button-price">$59</span>
+						<span class="button-price">219 KGS</span>
 					</button>
 					<!-- /.goods-price -->
 				</div>
@@ -812,13 +821,13 @@
 			<!-- /.col-3 -->
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/armatur/4.jpeg" alt="image: Striped Long Sleeve Shirt" class="goods-image">
-					<h3 class="goods-title">Striped Long Sleeve Shirt</h3>
+					<img src="img/such/armatur/4.jpeg" alt="image: Арматура металлическая 14 мм, А400/А500С, 2.92 м" class="goods-image">
+					<h3 class="goods-title">Арматура металлическая 14 мм, А400/А500С, 2.92 м</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Red/Sky Blue</p>
+					<!-- <p class="goods-description">Red/Sky Blue</p> -->
 					<!-- /.goods-description -->
 					<button class="button goods-card-btn add-to-cart" data-id="001">
-						<span class="button-price">$119</span>
+						<span class="button-price">119 KGS</span>
 					</button>
 					<!-- /.goods-price -->
 				</div>
@@ -832,7 +841,7 @@
 			</div>
 			<!-- /.col-9 -->
 			<div class="col-3 d-flex justify-content-end">
-				<a href="#" class="more">View All</a>
+				<a href="#" class="more">Смотреть Все</a>
 			</div>
 			<!-- /.col-3 -->
 		</div>
@@ -840,14 +849,14 @@
 		<div class="short-goods row">
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/penopleks/1.jpeg" alt="image: Hoodie" class="goods-image">
-					<h3 class="goods-title">Embroidered Hoodie</h3>
+					<img src="img/such/penopleks/1.jpeg" alt="image: Утеплитель Пеноплэкс КОМФОРТ 50х585х1185 мм, 7 шт" class="goods-image">
+					<h3 class="goods-title">Утеплитель Пеноплэкс КОМФОРТ 50х585х1185 мм, 7 шт</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
+					<!-- <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p> -->
 					<!-- /.goods-description -->
 					<!-- /.goods-price -->
 					<button class="button goods-card-btn add-to-cart" data-id="012">
-						<span class="button-price">$89</span>
+						<span class="button-price">1,650 KGS</span>
 					</button>
 				</div>
 				<!-- /.goods-card -->
@@ -855,13 +864,13 @@
 			<!-- /.col-3 -->
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/penopleks/2.jpg" alt="image: Faded Beach Trousers" class="goods-image">
-					<h3 class="goods-title">Faded Beach Trousers</h3>
+					<img src="img/such/penopleks/2.jpg" alt="image: Пазогребневая плита Волма полнотелая 667х500х80 мм" class="goods-image">
+					<h3 class="goods-title">Пазогребневая плита Волма полнотелая 667х500х80 мм</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Navy/Ochre/Black/Khaki</p>
+					<!-- <p class="goods-description">Navy/Ochre/Black/Khaki</p> -->
 					<!-- /.goods-description -->
 					<button class="button goods-card-btn add-to-cart" data-id="011">
-						<span class="button-price">$139</span>
+						<span class="button-price">205 KGS</span>
 					</button>
 					<!-- /.goods-price -->
 				</div>
@@ -870,13 +879,13 @@
 			<!-- /.col-3 -->
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/penopleks/3.jpg" alt="image: Text T-Shirt" class="goods-image">
-					<h3 class="goods-title">Text T-Shirt</h3>
+					<img src="img/such/penopleks/3.jpg" alt="image: Пазогребневая плита Волма полнотелая влагостойкая 667х500х80 мм" class="goods-image">
+					<h3 class="goods-title">Пазогребневая плита Волма полнотелая влагостойкая 667х500х80 мм</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">White</p>
+					<!-- <p class="goods-description">White</p> -->
 					<!-- /.goods-description -->
 					<button class="button goods-card-btn add-to-cart" data-id="010">
-						<span class="button-price">$59</span>
+						<span class="button-price">245 KGS</span>
 					</button>
 					<!-- /.goods-price -->
 				</div>
@@ -885,13 +894,13 @@
 			<!-- /.col-3 -->
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/penopleks/4.jpg" alt="image: Striped Long Sleeve Shirt" class="goods-image">
-					<h3 class="goods-title">Striped Long Sleeve Shirt</h3>
+					<img src="img/such/penopleks/4.jpg" alt="image: Пазогребневая плита Волма полнотелая 667х500х100 мм" class="goods-image">
+					<h3 class="goods-title">Пазогребневая плита Волма полнотелая 667х500х100 мм</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Red/Sky Blue</p>
+					<!-- <p class="goods-description">Red/Sky Blue</p> -->
 					<!-- /.goods-description -->
 					<button class="button goods-card-btn add-to-cart" data-id="001">
-						<span class="button-price">$119</span>
+						<span class="button-price">290 KGS</span>
 					</button>
 					<!-- /.goods-price -->
 				</div>
@@ -905,7 +914,7 @@
 			</div>
 			<!-- /.col-9 -->
 			<div class="col-3 d-flex justify-content-end">
-				<a href="#" class="more">View All</a>
+				<a href="#" class="more">Смотреть Все</a>
 			</div>
 			<!-- /.col-3 -->
 		</div>
@@ -913,14 +922,14 @@
 		<div class="short-goods row">
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/klei.plit/1.jpg" alt="image: Hoodie" class="goods-image">
-					<h3 class="goods-title">Embroidered Hoodie</h3>
+					<img src="img/such/klei.plit/1.jpg" alt="image: Клей плиточный Старатели 25 кг" class="goods-image">
+					<h3 class="goods-title">Клей плиточный Старатели 25 кг</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
+					<!-- <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p> -->
 					<!-- /.goods-description -->
 					<!-- /.goods-price -->
 					<button class="button goods-card-btn add-to-cart" data-id="012">
-						<span class="button-price">$89</span>
+						<span class="button-price">250 KGS</span>
 					</button>
 				</div>
 				<!-- /.goods-card -->
@@ -928,13 +937,13 @@
 			<!-- /.col-3 -->
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/klei.plit/2.jpeg" alt="image: Faded Beach Trousers" class="goods-image">
-					<h3 class="goods-title">Faded Beach Trousers</h3>
+					<img src="img/such/klei.plit/2.jpeg" alt="image: Клей для плитки Ceresit СМ 11 Plus 25 кг" class="goods-image">
+					<h3 class="goods-title">Клей для плитки Ceresit СМ 11 Plus 25 кг</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Navy/Ochre/Black/Khaki</p>
+					<!-- <p class="goods-description">Navy/Ochre/Black/Khaki</p> -->
 					<!-- /.goods-description -->
 					<button class="button goods-card-btn add-to-cart" data-id="011">
-						<span class="button-price">$139</span>
+						<span class="button-price">330 KGS</span>
 					</button>
 					<!-- /.goods-price -->
 				</div>
@@ -943,13 +952,13 @@
 			<!-- /.col-3 -->
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/shtuk/3.jpeg" alt="image: Text T-Shirt" class="goods-image">
-					<h3 class="goods-title">Text T-Shirt</h3>
+					<img src="img/such/klei.plit/3.jpeg" alt="image: Клей для плитки МКУ МС5 25 кг" class="goods-image">
+					<h3 class="goods-title">Клей для плитки МКУ МС5 25 кг</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">White</p>
+					<!-- <p class="goods-description">White</p> -->
 					<!-- /.goods-description -->
 					<button class="button goods-card-btn add-to-cart" data-id="010">
-						<span class="button-price">$59</span>
+						<span class="button-price">180 KGS</span>
 					</button>
 					<!-- /.goods-price -->
 				</div>
@@ -958,13 +967,13 @@
 			<!-- /.col-3 -->
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/shtuk/4.jpeg" alt="image: Striped Long Sleeve Shirt" class="goods-image">
-					<h3 class="goods-title">Striped Long Sleeve Shirt</h3>
+					<img src="img/such/klei.plit/4.jpeg" alt="image: Шпаклевка полимерная ВЕТОНИТ LR+ 20 кг" class="goods-image">
+					<h3 class="goods-title">Шпаклевка полимерная ВЕТОНИТ LR+ 20 кг</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Red/Sky Blue</p>
+					<!-- <p class="goods-description">Red/Sky Blue</p> -->
 					<!-- /.goods-description -->
 					<button class="button goods-card-btn add-to-cart" data-id="001">
-						<span class="button-price">$119</span>
+						<span class="button-price">640 KGS</span>
 					</button>
 					<!-- /.goods-price -->
 				</div>
@@ -978,7 +987,7 @@
 			</div>
 			<!-- /.col-9 -->
 			<div class="col-3 d-flex justify-content-end">
-				<a href="#" class="more">View All</a>
+				<a href="#" class="more">Смотреть Все</a>
 			</div>
 			<!-- /.col-3 -->
 		</div>
@@ -986,14 +995,14 @@
 		<div class="short-goods row">
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/grunt/1.jpg" alt="image: Hoodie" class="goods-image">
-					<h3 class="goods-title">Embroidered Hoodie</h3>
+					<img src="img/such/grunt/1.jpg" alt="image: Грунтовка укрепляющая OSCAR, 10 л" class="goods-image">
+					<h3 class="goods-title">Грунтовка укрепляющая OSCAR, 10 л</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
+					<!-- <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p> -->
 					<!-- /.goods-description -->
 					<!-- /.goods-price -->
 					<button class="button goods-card-btn add-to-cart" data-id="012">
-						<span class="button-price">$89</span>
+						<span class="button-price">580 KGS</span>
 					</button>
 				</div>
 				<!-- /.goods-card -->
@@ -1001,13 +1010,13 @@
 			<!-- /.col-3 -->
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/grunt/2.jpeg" alt="image: Faded Beach Trousers" class="goods-image">
-					<h3 class="goods-title">Faded Beach Trousers</h3>
+					<img src="img/such/grunt/2.jpeg" alt="image: Грунтовка Гермес Акрилгрунт LF 10 л" class="goods-image">
+					<h3 class="goods-title">Грунтовка Гермес Акрилгрунт LF 10 л</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Navy/Ochre/Black/Khaki</p>
+					<!-- <p class="goods-description">Navy/Ochre/Black/Khaki</p> -->
 					<!-- /.goods-description -->
 					<button class="button goods-card-btn add-to-cart" data-id="011">
-						<span class="button-price">$139</span>
+						<span class="button-price">205 KGS</span>
 					</button>
 					<!-- /.goods-price -->
 				</div>
@@ -1016,13 +1025,13 @@
 			<!-- /.col-3 -->
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
-					<img src="img/such/grunt/3.jpeg" alt="image: Text T-Shirt" class="goods-image">
-					<h3 class="goods-title">Text T-Shirt</h3>
+					<img src="img/such/grunt/3.jpeg" alt="image: Наливной пол Unis Горизонт, 20 кг" class="goods-image">
+					<h3 class="goods-title">Наливной пол Unis Горизонт, 20 кг</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">White</p>
+					<!-- <p class="goods-description">White</p> -->
 					<!-- /.goods-description -->
 					<button class="button goods-card-btn add-to-cart" data-id="010">
-						<span class="button-price">$59</span>
+						<span class="button-price">270 KGS</span>
 					</button>
 					<!-- /.goods-price -->
 				</div>
@@ -1032,12 +1041,12 @@
 			<div class="col-lg-3 col-sm-6">
 				<div class="goods-card">
 					<img src="img/such/grunt/4.jpeg" alt="image: Striped Long Sleeve Shirt" class="goods-image">
-					<h3 class="goods-title">Striped Long Sleeve Shirt</h3>
+					<h3 class="goods-title">Наливной пол Быстротвердеющий, 20 кг</h3>
 					<!-- /.goods-title -->
-					<p class="goods-description">Red/Sky Blue</p>
+					<!-- <p class="goods-description">Red/Sky Blue</p> -->
 					<!-- /.goods-description -->
 					<button class="button goods-card-btn add-to-cart" data-id="001">
-						<span class="button-price">$119</span>
+						<span class="button-price">250 KGS</span>
 					</button>
 					<!-- /.goods-price -->
 				</div>
@@ -1363,6 +1372,7 @@
 			</form>
 		</div>
 	</div>
+	
 </body>
 
 </html>

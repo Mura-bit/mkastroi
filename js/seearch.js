@@ -1,4 +1,4 @@
-const geetGoods = () => {
+const getGoods = () => {
     const links = document.querySelectorAll('.navigation-link') // ссылки нав. меню
     const viewAll = document.querySelectorAll('.more') // кнопка больше
     const viewMore = document.querySelector('.more')
@@ -20,12 +20,12 @@ const geetGoods = () => {
             //содержимое карточки
             goodBlock.innerHTML = `
                 <div class="goods-card">
-                    <span class="label">${good.label ? null : 'd-none'}</span>
+                    <span class="label ${good.label ? null : 'd-none'}">${good.label}</span>
                     <img src="db/${good.img}" alt="${good.name}" class="goods-image">
                     <h3 class="goods-title">${good.name}</h3>
                     <p class="goods-description">${good.description}</p>
                     <button class="button goods-card-btn add-to-cart" data-id="${good.id}">
-                        <span class="button-price">$${good.price}</span>
+                        <span class="button-price">${good.price} KGS</span>
                     </button>
                 </div>
             `
@@ -83,4 +83,4 @@ const geetGoods = () => {
     }
                      
 }
-geetGoods()
+getGoods()
